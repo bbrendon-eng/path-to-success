@@ -60,7 +60,9 @@ root{
     --Pink:#D9526F;
     --Dark-gray:#1E1E1E; 
     --White:#ffffff;	
+	--maxw:450px
 }
+
 
 
 
@@ -72,232 +74,40 @@ html, body {
 	color: var(--Dark-gray);
 	background: var(--Lavender);
 	padding: 0;
-    margin: 0 auto;
+    margin: 0;
 }
 
-h1, .h1{
-	font-family: Kavoon, cursive;
+h1{
+	font-family: 'Kavoon', cursive;
 	font-size: 3em;
-	line-height: 1.05;
-	margin: 0 0 .25em;
-	color: var(--Purple);
 }
-h2, .h2{
-	font-family: Inter, sans-serif;
-	font-weight: 600;
-	font-size: 1.5em;
-	line-height: 1.15;
-	margin: 0 0 .5em;
-	color:var(--Teal);
 
+h2{
+	font-family: 'Kavoon', cursive;
+	font-size: 2em;
 }
-h3, .h3{
-	font-family: Inter, sans-serif;
-	font-weight: 600;
-	font-size: 1.25em;
-	line-height: 1.25;
-	margin: 0 0 .4em;
-	color: var(--Dark-gray);
+
+h3{
+	font-family: 'Inter', sans-serif;
+	font-size: 1.5em;
 }
-h4, .h4{
-	font-family: Inter, sans-serif;
-	font-weight: 500;
-	font-size: 1em;
-	line-height: 1.4;
-	margin: 0 0 .4em;
-	color: var(--Dark-gray);
+
+h4{
+	font-family: 'Inter', sans-serif;
+	font-size: 1.15em;
 }
-p, li, span, a {
-	font-family: Inter, sans-serif;
-	font-size: var(--fs-base);
-	color: var(--Dark-gray);
-}
-a{
-	color: var(--Purple);
-	text-decoration: none;
-}
-a:focus, button:focus, :focus{
-	outline: 2px solid var(--Teal);
+
+a:focus, button:focus, :focus {
+	outline: 2px solid var(--teal);
 	outline-offset: 2px;
 }
-.header{
-	background: var(--Teal);
-	color:white;
-	text-align:center;
-	padding: 18px 16px;
-}
-.header p{
-	margin: 8px 0 6px;
-	font-size: 1rem;
-	opacity: 0.95;
-}
-.header .brand{
-	font-family: Kavoon, cursive;
-	font-size: 2.4rem;
-	margin: 0;
-}
-.header nav{
-	margin-top: 8px;
-}
-.header ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	gap: 12px;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-.header li{display: inline-block;}
-.header a{
-	color: white;
-	padding: 8px 12px;
-	border-radius: 6px;
-	display: inline-block;
-}
-.header a:hover,
-.header a:focus{
-	background: rgba(255,255,255);
-	text-decoration: none;
-}
-main{
+
+/*header*/
+header{
+	background-color: var(--Purple);
+	text-align: center;
+	padding: 28px 24px 0;
 	max-width: var(--maxw);
 	margin: 0 auto;
-	padding: 20px 16px;
-}
-section{
-	margin: 40px 0;
-
-}
-section h2{
-	font-family: Kavoon, cursive;
-	font-weight: 700;
-	font-size: 2em;
-	color: var(--Purple);
-	margin-bottom: 12px;
-}
-section#ourservices article{
-	display: grid;
-	gap: 20px;
-	grid-template-columns: 1fr;
-}
-section#ourservices article > h3{
-	margin-top: 6px;
-	font-size: 1.4em;
-}
-section#ourservices section{
-	display: flex;
-	align-items: flex-start;
-	gap: 12px;
-	padding: 8px 0;
-}
-section#ourservices section img{
-	width: 64px;
-	height: 64px;
-	object-fit: contain;
-	
-}
-@media (min-width: 700px){
-	section#ourservices article{
-		grid-template-columns: 1fr 1fr;
-	}
-	section#our-services section{
-		align-items: center;
-	}
-	section#our-services section img{
-		width: 72px;
-		height: 72px;
-	}
 }
 
-#why-choose-us ul{
-	padding-left: 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 8px 20px;
-	list-style: none;
-}
-@media (max-width: 600px){
-	#why-choose-us ul{
-		grid-template-columns: 1fr;
-	}
-}
-
-#pricing article {
-	margin-bottom: 20px;
-}
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-top: 8px;
-}
-th,td{
-	text-align: left;
-	padding: 8px;
-	border-bottom: 1px solid #ddd;
-}
-thread th {
-	font-weight: 600;
-	background: white;
-}
-section#first-step p{
-	max-width: 60ch;
-}
-#first-step a {
-	display: inline-block;
-	padding: 10px 14px;
-	background: var(--Purple);
-	color:white;
-	border-radius: 6px;
-	text-decoration: none;
-}
-#first-step a:hover, #first-step a:focus{
-	background: var(--Lavender);
-
-}
-.stack{
-	display: grid;
-	gap: 14px;
-}
-.card{
-	background: white;
-	border-radius: 12px;
-	padding: 12px;
-	border: 1px solid white;
-	box-shadow: 0 1px 2px rgba(0,0,0,.05);
-}
-.card img{
-	max-width: 48px;
-	height: auto;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 8px;
-}
-.card title{
-	font-family: Inter, san-serif;
-	font-weight: 600;
-	font-size 1.05em;
-	display: inline-block;
-	vertical-align: middle;
-}
-.card p {
-	margin: 6px 0 0;
-	font-size: 0.95em;
-}
-.footer{
-	text-align: center;
-	 padding: 20px 10px;
-	 color:#666;
-	font-size: 0.9em;
-
-}
-@media (min-width: 900px){
-	.header .brand{
-		font-size: 2.8rem;
-
-	}
-	section#our-services article {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
