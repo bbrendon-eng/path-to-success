@@ -52,7 +52,7 @@ table {
 }
 
 /* ROOT VARIABLES */
-root{
+:root{
     --Teal :#4CA7C0;
     --Purple: #484FB7;
     --Lavender: #6B8FE7;
@@ -211,7 +211,7 @@ main{
 #our-services article > div {
 	background-color: var(--White);
 	border-radius: 14px;
-	padding: 20px 18 px 18px;
+	padding: 20px 18px 18px;
 	margin-bottom: 14px;
 	display: flex;
 	flex-direction: column;
@@ -226,6 +226,15 @@ main{
 	margin-bottom: 10px;
 
 }
+
+#our-services article > div h4 {
+	font-weight: 700;
+	color: var(--Teal);
+	margin-bottom: 8px;
+}
+
+
+
 
 #our-services article > div p{
 	font-size: 0.88rem;
@@ -248,7 +257,7 @@ main{
 }
 
 #why-choose-us ul{
-	display:gride;
+	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
 }
@@ -267,7 +276,7 @@ main{
 /*pricing*/
 #pricing{
 	background-color: var(--Lavender);
-	padding: 28px 20 px 24px;
+	padding: 28px 20px 24px;
 	margin: 0;
 
 }
@@ -292,12 +301,12 @@ main{
 	font-size: 0.88rem;
 }
 
-#pricing thread tr{
+#pricing thead tr{
 	background-color: var(--Yellow);
 
 }
 
-#pricing thread th{
+#pricing thead th{
 	font-weight: 700;
 	font-size: 0.82rem;
 	letter-spacing: 0.06em;
@@ -332,6 +341,13 @@ main{
 	color: var(--White);
 	margin-bottom: 14px;
 	line-height: 1.2;
+}
+
+#first-step p a {
+	font-size: 0.9rem;
+	line-height:1.6;
+	color: var(--White);
+	margin-bottom: 20px;
 }
 
 #first-step p a {
