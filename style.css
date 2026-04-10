@@ -60,7 +60,6 @@ table {
     --Pink:#D9526F;
     --Dark-gray:#1E1E1E; 
     --White:#ffffff;	
-	--maxw:450px
 }
 
 
@@ -181,7 +180,7 @@ header nav ul li a:hover, header nav ul li a:focus{
 /* main*/
 
 main{
-	max-width: var(--maxw);
+	max-width: var(450px);
 	margin: 0 auto;
 	padding: 0;
 }
@@ -372,7 +371,7 @@ main{
 
 footer {
 	background-color: var(--Purple);
-	max-width: var(--maxw);
+	max-width: 450px;
 	margin: 0 auto;
 	padding: 16px 20px;
 	display: flex;
@@ -397,7 +396,7 @@ footer p a:hover{
 
 @media (min-width:520px){
 	header,main,footer{
-		max-width: var(--maxw);
+		max-width: 450px;
 		margin-left: auto;
 		margin-right: auto;
 	}
