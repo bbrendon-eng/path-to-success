@@ -111,3 +111,278 @@ header{
 	margin: 0 auto;
 }
 
+header h1 {
+	line-height: 1.1;
+	color: var(--White);
+	margin-bottom: 6px;
+}
+
+header > p{
+	font-style: italic;
+	font-size: 0.95rem;
+	color: var(--White);
+	opacity: 0.92;
+	margin-bottom: 18px;
+
+}
+
+header h2{
+	background-color: var(--Yellow);
+	color: var(--Purple);
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	padding: 10px 0;
+	margin: 0;
+}
+
+header nav {
+	background-color: var(--Yellow);
+}
+
+header nav ul {
+	padding: 0 0 4px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	align-items: center;
+}
+
+header nav ul li{
+	width:100%;
+
+}
+
+header nav ul li a {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: 700;
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--Purple);
+	background-color: var(--Yellow);
+	padding: 10px 16px;
+	text-decoration: none;
+	border-top: 1px solid rgba(72, 79, 183, 0.15);
+
+}
+
+header nav ul li a:hover, header nav ul li a:focus{
+	background-color: var(--White);
+	text-decoration: none;
+}
+
+/* main*/
+
+main{
+	max-width: var(--maxw);
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* our services*/
+#our-services {
+	background-color: var(--Lavender);
+	padding: 28px 20px 20px;
+	margin: 0;
+
+}
+
+#our-services >h2{
+	color: var(--White);
+	margin-bottom: 4px;
+
+}
+
+#our-services > article > h3{
+	font-weight: 700;
+	color: var(--Yellow);
+	text-transform: capitalize;
+	margin: 18px 0 10px;
+	letter-spacing: 0.01em;
+}
+
+#our-services article > div {
+	background-color: var(--White);
+	border-radius: 14px;
+	padding: 20px 18 px 18px;
+	margin-bottom: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#our-services article > div img {
+	width: 56px;
+	height: 56px;
+	object-fit: contain;
+	margin-bottom: 10px;
+
+}
+
+#our-services article > div p{
+	font-size: 0.88rem;
+	line-height: 1.55;
+	color: var(--Dark-gray);
+
+}
+
+/* why choose us*/
+#why-choose-us{
+	background-color: var(--Pink);
+	padding: 28px 20px;
+	margin:0;
+
+}
+
+#why-choose-us h2{
+	color: var(--White);
+	margin-bottom: 16px;
+}
+
+#why-choose-us ul{
+	display:gride;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+#why-choose-us ul li{
+	background-color: var(--Teal);
+	color: var(--White);
+	font-weight: 700;
+	font-size: 0.9rem;
+	text-align: center;
+	padding: 18px 12px;
+	border-radius: 8px;
+	line-height: 1.35;
+}
+
+/*pricing*/
+#pricing{
+	background-color: var(--Lavender);
+	padding: 28px 20 px 24px;
+	margin: 0;
+
+}
+#pricing > h2{
+	color: var(--White);
+	margin-bottom: 4px;
+}
+
+#pricing article h3 {
+	font-weight: 700;
+	color: var(--Yellow);
+	margin: 18px 0 8px;
+
+}
+
+#pricing table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--White);
+	border-radius: 8px;
+	overflow: hidden;
+	font-size: 0.88rem;
+}
+
+#pricing thread tr{
+	background-color: var(--Yellow);
+
+}
+
+#pricing thread th{
+	font-weight: 700;
+	font-size: 0.82rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--Purple);
+	padding: 10px 14px;
+	text-align: left;
+}
+
+#pricing tbody tr{
+	border-bottom: 1px solid #e8e8e8
+}
+
+#pricing tbody tr:last-child{
+	border-bottom:none;
+}
+
+#pricing tbody td{
+	font-size: 0.88rem;
+	color: var(--Dark-gray);
+	padding: 10px 14px;
+	text-align: left;
+}
+
+#first-step{
+	background-color: var(--Pink);
+	padding: 32px 20px;
+	margin: 0;
+}
+
+#first-step h2{
+	color: var(--White);
+	margin-bottom: 14px;
+	line-height: 1.2;
+}
+
+#first-step p a {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: var(--White);
+	color: var(--Purple);
+	font-weight: 700;
+	font-size: 0.9rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 14px 20px;
+	border-radius: 8px;
+	text-decoration:none;
+}
+
+#first-step p a:hover, #first-step p a:focus{
+	background-color: #f0f0f0;
+}
+
+footer {
+	background-color: var(--Purple);
+	max-width: var(--maxw);
+	margin: 0 auto;
+	padding: 16px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p {
+	font-size: 0.8rem;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+footer p a {
+	font-size: 0.8rem;
+	color: var(--White);
+	text-decoration: underline;
+}
+
+footer p a:hover{
+	color: var(--Yellow);
+}
+
+@media (min-width:520px){
+	header,main,footer{
+		max-width: var(--maxw);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
